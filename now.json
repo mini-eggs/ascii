@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "ascii",
+  "alias": ["ascii.evanjon.es"],
+  "env": {
+    "GIN_MODE": "release"
+  },
+  "builds": [
+    { "src": "main.go", "use": "@now/go@canary"}
+  ],
+  "routes": [
+    { "src": "/", "dest": "main.go" }
+  ]
+}
